@@ -1,0 +1,5 @@
+rostopic
+rostopic -h
+rostopic list #列出活动主题
+rostopic echo /odom #将消息打印到屏幕
+rostopic pub -h #将数据发布到主题
