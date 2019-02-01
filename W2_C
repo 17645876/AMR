@@ -3,3 +3,16 @@ rostopic -h
 rostopic list #列出活动主题
 rostopic echo /odom #将消息打印到屏幕
 rostopic pub -h #将数据发布到主题
+rosrun turtlesim turtlesim_node
+rosrun turtlesim turtle_teleop_key
+rqt_graph
+rostopic echo /turtle1/cmd_vel
+rostopic pub /mobile_base/commands/velocity geometry_msgs/Twist "
+linear:
+  x: 5.0
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 2.5" -r 10 
