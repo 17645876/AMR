@@ -1,3 +1,5 @@
 roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/empty.world
+roslaunch uol_turtlebot_simulator object-search-training.launch
 roslaunch kobuki_keyop keyop.launch
 roslaunch turtlebot_rviz_launchers view_robot.launch
+roslaunch turtlebot_rviz_launchers view_navigation.launch
